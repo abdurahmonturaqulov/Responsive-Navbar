@@ -78,4 +78,12 @@ nav {
   .burger {
     display: block;
   }
+  
+
 }
+
+.nav-active {
+  transform: translate(0);
+}
+
+

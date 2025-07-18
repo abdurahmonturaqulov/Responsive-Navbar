@@ -10,6 +10,11 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat-Medium', sans-serif;
 }
+
+header {
+  height: 100vh;
+  background-image: url("../image/A2003180052020-03-19_11_29_12photo.jpg");
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -47,6 +52,7 @@ nav {
   width: 25px;
   background-color: #fff;
   margin: 5px;
+  transition: transform 0.5s linear;
 }
 
 @media screen and (max-width: 1024px) {
@@ -89,7 +95,7 @@ nav {
 @keyframes navLinkMove {
   from {
     opacity: 0;
-    transform: translateX(70);
+    transform: translateX(70px);
   }
   to {
     opacity: 1;
@@ -98,10 +104,14 @@ nav {
 }
 
 .toggle .line-1 {
-  transform: rotate(-45deg) translate(-5, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line-2 {
-  
+  opacity: 0;
+}
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+
 }
 
